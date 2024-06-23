@@ -1,7 +1,7 @@
 // enforce-foo-bar.test.js
 const { RuleTester } = require("eslint");
 
-const fooBarRule = require("./lib/index.js");
+const fooBarRule = require("../lib/index.js");
 
 const ruleTester = new RuleTester({
     languageOptions: { ecmaVersion: 2015 }
