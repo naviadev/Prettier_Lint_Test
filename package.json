@@ -1,10 +1,15 @@
 {
-  "name": "1",
+  "name": "eslint-plugin-whisperlint",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "eslint",
+    "lint",
+    "plugin"
+  ],
   "author": "",
   "license": "ISC",
   "description": "",
@@ -16,5 +21,23 @@
     "globals": "^15.6.0",
     "typescript": "^5.5.2",
     "typescript-eslint": "^7.13.1"
+  },
+  "peerDependencies": {
+    "@eslint/compat": "^1.1.0",
+    "@eslint/js": "^9.5.0",
+    "eslint": "^9.5.0",
+    "eslint-plugin-react": "^7.34.3",
+    "globals": "^15.6.0",
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^7.13.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "your-custom-rule": "error"
+    }
   }
 }
